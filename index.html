@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TEAVY™ Market | Community Barter &amp; Wellness</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="logo.png" rel="icon" type="image/png"/>
+<meta content="TEAVY™ Market – A peer-to-peer wellness and barter marketplace rooted in vitality, spiritual commerce, and holistic abundance." name="description"/>
+<meta content="TEAVY™, wellness marketplace, barter, holistic tea, soundbath, community events, yoga, eco-laundry, PMA" name="keywords"/>
+<meta content="#8e24aa" name="theme-color"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+</meta></head>
+<body>
+<div class="pma-banner">
+  <span class="banner-text">
+    <i class="fa-solid fa-circle-info"></i> <span class="inner-banner-text"><strong>Notice:</strong> By using this platform, you agree to participate in private contract and
+    <span style="display: inline-block;">spiritual exchange under our <a href="/membership-terms.html" target="_blank">PMA terms</a>.</span></span>
+  </span>
+</div>
+<header class="header">
+<div class="header-container">
+<img alt="TEAVY™ Logo" class="logo" src="logo.png"/>
+<button class="menu-toggle">☰</button>
+<nav class="nav-links">
+<a href="index.html"><i class="fa-solid fa-spa"></i> Home</a>
+<a href="#market"><i class="fa-solid fa-store"></i> Marketplace</a>
+<a href="#events"><i class="fa-solid fa-calendar-days"></i> Events</a>
+<a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+<a href="https://teavy.org" target="_blank"><i class="fa-solid fa-circle-info"></i> TEAVY.org</a>
+<button class="wallet-btn" id="connectWalletBtn"><i class="fa-solid fa-user-lock"></i> Connect Wallet</button>
+</nav>
+</div>
+</header>
+<main class="content">
+<section class="hero">
+<div class="hero-carousel-container">
+<div class="hero-carousel hero-carousel-left">
+<div class="hero-carousel-track">
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-1.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-2.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-3.png"/></div>
+<!-- Duplicates for infinite loop -->
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-4.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-5.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-6.png"/></div>
+</div>
+</div>
+<div class="hero-text-slider"><div class="hero-slide active">
+<h1><i class="fa-solid fa-spa" style="background-color: #fff; border-radius: 30px; padding: 10px;"></i><br/><br/>Welcome to the <span style="display: inline-block;"><span>TEAVY</span><span style="font-weight:600;">™</span> Marketplace</span></h1>
+<p>An autonomous peer-to-peer wellness <span style="display: inline-block;">and barter marketplace.</span><br/>Rooted in vitality, spiritual commerce, <span style="display: inline-block;">and energetic harmony.</span></p>
+<a class="btn-primary" href="#market">Explore Marketplace</a>
+</div><div class="hero-slide">
+<h1><i class="fa-solid fa-leaf" style="background-color: #fff; border-radius: 30px; padding: 10px;"></i><br/><br/>What is TEAVY™ Market?</h1>
+<p><span style="display: inline-block">TEAVY™ is a</span> <span style="display: inline-block">sacred commerce platform</span> <span style="display: inline-block">where healing, wellness, <span style="display: inline-block">and community exchange flow.</span><br/>Join us to trade tea, services, <span style="display: inline-block">and more in a spiritually aligned space.</span></p>
+<a class="btn-primary" href="#market">Explore Marketplace</a>
+</div><div class="hero-pagination">
+<span class="dot active" data-slide="0"></span>
+<span class="dot" data-slide="1"></span>
+</div></div>
+<div class="hero-carousel hero-carousel-right">
+<div class="hero-carousel-track">
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-1.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-2.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-3.png"/></div>
+<!-- Duplicates for infinite loop -->
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-4.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-5.png"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-6.png"/></div>
+</div>
+</div>
+</div>
+</section>
+<section class="service-section" id="market">
+<h2><i class="fa-solid fa-store"></i> Community Marketplace (Barterspace)</h2><p>(Featured Products &amp; Services)</p>
+<div class="mobile-filter-container">
+<select class="filter-select-mobile" name="category">
+<option value="all">All</option>
+<option value="tea">Tea</option>
+<option value="services">Services</option>
+<option disabled="" value="eco-laundry"><!-- --></option>
+</select>
+<select class="subfilter-select-mobile" name="location" style="display: none;">
+<option value="">Location</option>
+<option value="online">Online</option>
+<option value="local">Local</option>
+<option value="nationwide">Nationwide</option>
+</select>
+</div>
+<div class="marketplace-container">
+<aside class="filter-sidebar">
+<h3>Filter by Type</h3>
+<button class="filter-toggle">☰ Filter</button>
+<div class="filter-options">
+<select class="filter-select" name="category">
+<option selected="" value="all">All</option>
+<option value="tea">Tea</option>
+<option value="services">Services</option>
+<option disabled="" value="eco-laundry"></option>
+</select>
+</div>
+<div class="subfilter-options" data-subfilter="location">
+<h4>Location</h4>
+<label><input checked="" name="location" type="checkbox" value="online"/> Online</label>
+<label><input name="location" type="checkbox" value="local"/> Local</label>
+<label><input name="location" type="checkbox" value="nationwide"/> Nationwide</label>
+</div>
+</aside>
+<div class="product-carousel">
+<div class="carousel-track">
+<!-- Original Products -->
+<div class="product-preview" data-category="tea" data-item-number="1">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Blue Lotus + Rose Tea"><img class="preview-img" src="assets\images\products\oolong-harmony.png"/></div>
+<p class="product-name">TEAVY™ Blue Lotus + Rose Tea</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Blue Lotus, Rose Petals</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Farm</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="2">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Green Tea Elixir"><img class="preview-img" src="assets\images\products\green-tea-elixir.png"/></div>
+<p class="product-name">TEAVY™ Green Tea Elixir</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Green Tea, Jasmine</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Sustainable Fields</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="3">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Herbal Chamomile Blend"><img class="preview-img" src="assets\images\products\herbal-chamomile.png"/></div>
+<p class="product-name">TEAVY™ Herbal Chamomile Blend</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Chamomile, Lavender</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Eco-Friendly Gardens</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.8 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Moroccan Mint"><img class="preview-img" src="assets\images\products\moroccan-mint.png"/></div>
+<p class="product-name">TEAVY™ Moroccan Mint</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Moroccan Mint Leaves</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Highlands</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Oolong Harmony"><img class="preview-img" src="assets\images\products\oolong-harmony.png"/></div>
+<p class="product-name">TEAVY™ Oolong Harmony</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Oolong Tea</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Mountain Estates</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="6">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Hibiscus Glow"><img class="preview-img" src="assets\images\products\oolong-harmony.png"/></div>
+<p class="product-name">TEAVY™ Hibiscus Glow</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Hibiscus Flowers</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Tropical Farms</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.7 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Service Exchange Listings -->
+<div class="product-preview" data-category="services" data-item-number="7" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Reiki Attunement Sessions">Service Icon</div>
+<p class="product-name">Advanced Reiki Attunement</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-2 transformative Reiki attunement sessions to elevate your energy alignment.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour acupuncture/cupping session by a master Chinese acupuncturist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>3 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="8" data-location="local">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Yoga Instruction">Service Icon</div>
+<p class="product-name">Personalized Yoga Guidance</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>2 private yoga sessions tailored to your wellness journey.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour sound healing session with certified practitioner.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="9" data-location="nationwide">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Holistic Coaching">Service Icon</div>
+<p class="product-name">Holistic Life Coaching</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour session to unlock your potential with expert guidance.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour massage therapy by a licensed therapist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="10" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Sound Healing Therapy">Service Icon</div>
+<p class="product-name">Sacred Sound Healing</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour immersive soundbath to restore harmony.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour nutritional consultation with a holistic expert.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.2 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Duplicated Products for Seamless Loop -->
+<div class="product-preview" data-category="tea" data-item-number="1">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Blue Lotus + Rose Tea"><img class="preview-img" src="assets\images\products\oolong-harmony.png"/></div>
+<p class="product-name">TEAVY™ Blue Lotus + Rose Tea</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Blue Lotus, Rose Petals</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Farm</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="2">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Green Tea Elixir"><img class="preview-img" src="assets\images\products\green-tea-elixir.png"/></div>
+<p class="product-name">TEAVY™ Green Tea Elixir</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Green Tea, Jasmine</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Sustainable Fields</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="3">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Herbal Chamomile Blend"><img class="preview-img" src="assets\images\products\herbal-chamomile.png"/></div>
+<p class="product-name">TEAVY™ Herbal Chamomile Blend</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Chamomile, Lavender</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Eco-Friendly Gardens</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.8 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Moroccan Mint"><img class="preview-img" src="assets\images\products\moroccan-mint.png"/></div>
+<p class="product-name">TEAVY™ Moroccan Mint</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Moroccan Mint Leaves</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Highlands</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Oolong Harmony"><img class="preview-img" src="assets\images\products\oolong-harmony.png"/></div>
+<p class="product-name">TEAVY™ Oolong Harmony</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Oolong Tea</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Mountain Estates</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="6">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Hibiscus Glow"><img class="preview-img" src="assets\images\products\oolong-harmony.png"/></div>
+<p class="product-name">TEAVY™ Hibiscus Glow</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Hibiscus Flowers</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Tropical Farms</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.7 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Service Exchange Listings -->
+<div class="product-preview" data-category="services" data-item-number="7" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Reiki Attunement Sessions">Service Icon</div>
+<p class="product-name">Advanced Reiki Attunement</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-2 transformative Reiki attunement sessions to elevate your energy alignment.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour acupuncture/cupping session by a master Chinese acupuncturist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>3 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="8" data-location="local">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Yoga Instruction">Service Icon</div>
+<p class="product-name">Personalized Yoga Guidance</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>2 private yoga sessions tailored to your wellness journey.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour sound healing session with certified practitioner.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="9" data-location="nationwide">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Holistic Coaching">Service Icon</div>
+<p class="product-name">Holistic Life Coaching</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour session to unlock your potential with expert guidance.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour massage therapy by a licensed therapist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="10" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Sound Healing Therapy">Service Icon</div>
+<p class="product-name">Sacred Sound Healing</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour immersive soundbath to restore harmony.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour nutritional consultation with a holistic expert.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.2 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Fixed, Centered Buttons -->
+<!-- Sign Up Modal -->
+<dialog class="modal signup-modal">
+<div class="modal-content">
+<h3><i class="bi bi-person-circle" style="font-size: 2rem;"></i><br/>Apply for TEAVY™ Market Membership</h3>
+<form id="signup-form">
+<input name="username" placeholder="Choose a Username" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<input name="password" placeholder="Create a Password" required="" type="password"/>
+<div class="terms-container">
+<input name="terms" required="" style="display: inline; width: 1rem;" type="checkbox"/>
+<label>I agree to the <a href="/terms.html" target="_blank">Terms and Conditions</a></label>
+</div>
+<button class="btn-primary" type="submit">Submit</button>
+<button class="btn-secondary close-modal" type="button">Cancel</button>
+</form>
+</div>
+</dialog>
+<!-- Begin Learn More Modal -->
+<!-- Learn More Modal (div-based for compatibility) -->
+<div class="modal learn-more-modal" style="display: none;">
+<div class="modal-content">
+<h3>About TEAVY™ Market</h3>
+<p class="learn-more">
+      TEAVY™ Market is a peer-to-peer wellness and barter marketplace designed to foster vitality, spiritual commerce, and holistic abundance. Trade teas, services, and more using our credit system. To get started, sign up, explore listings, and connect with others via wallet integration. Learn more at
+      <a href="https://teavy.org" target="_blank">teavy.org</a>.
+    </p>
+<button class="btn-secondary close-modal" type="button">Close</button>
+</div>
+</div>
+<!-- End Learn More Modal -->
+</div></div></div>
+</section>
+<section class="service-section" id="events">
+<h2><i class="fa-solid fa-calendar-days"></i> Upcoming Tea &amp; Soundbath Ceremonies</h2>
+<p>Curated community events — yoga, live music, potlucks, and more.</p>
+<div class="event-calendar">
+<div class="calendar-header">
+<button class="btn-secondary" id="prev-month">◄</button>
+<h3 id="month-year">May 2025</h3>
+<button class="btn-secondary" id="next-month">►</button>
+</div>
+<div class="calendar-grid">
+<div class="calendar-day-header">Sun</div>
+<div class="calendar-day-header">Mon</div>
+<div class="calendar-day-header">Tue</div>
+<div class="calendar-day-header">Wed</div>
+<div class="calendar-day-header">Thu</div>
+<div class="calendar-day-header">Fri</div>
+<div class="calendar-day-header">Sat</div>
+<!-- Calendar days will be populated by JavaScript -->
+</div>
+<div class="event-list">
+<h4 id="events-heading">Events in May 2025</h4>
+<ul id="event-list">
+<!-- Events will be populated by JavaScript -->
+</ul>
+</div>
+</div>
+</section>
+<section class="service-section">
+<h2><i class="fa-solid fa-soap"></i> Soltare Eco-Laundry (Coming Soon)</h2>
+<p>Solar-powered modernized laundry facility supporting eco-living.</p>
+</section>
+<section class="contact-section" id="contact">
+<h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+<form action="mailto:info@teavy.market" enctype="text/plain" method="POST">
+<input name="name" placeholder="Your Name" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<textarea name="message" placeholder="Your Message" required=""></textarea>
+<!-- Honeypot Field (Hidden) -->
+<div class="honeypot-field">
+<input name="honeypot" placeholder="Leave this blank" type="text" value=""/>
+</div>
+<button class="btn-primary" id="send-message" type="submit">Send Message</button>
+</form>
+</section>
+</main>
+<footer class="footer">
+<div class="donate"><a class="btn-secondary" id="donate-button" href="#donate"><i class="bi bi-suit-heart-fill"></i> Donate</a></div>
+<p>© 2025 TEAVY™ and its affiliates. All rights reserved.</p>
+<p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Disclaimer</a></p>
+<div class="social-media">
+<a aria-label="Instagram" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+<a aria-label="Twitter" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+</footer>
+<div class="floating-footer-bar" id="floatingFooter">
+  <div class="footer-bar-inner">
+    <div class="footer-btn-wrap">
+     <button id="footerJoinButton" class="btn-primary signup-btn">
+  <i class="bi bi-person-fill"></i> Join to Barter
+</button>
+    </div>
+  </div>
+</div>
+
+<!-- PMA Access Modal -->
+<div class="modal pma-access-modal" id="pmaAccessModal">
+  <div class="modal-content">
+    <h3><i class="bi bi-person-check-fill" style="font-size: 2rem;"></i><br/>Private Membership Access Required</h3>
+    <p>Bartering is reserved for TEAVY™ PMA members only.<br/>To continue, please confirm your agreement:</p>
+    <div class="terms-container" style="text-align: left;">
+  <input type="checkbox" id="agreePMA" required style="margin-right: 0.5rem; display: inline-block; width: 1rem; vertical-align: middle;" />
+  <label for="agreePMA" style="display: inline-block; font-size: 0.84rem; vertical-align: middle;">
+    I agree to the <a href="/membership-terms.html" target="_blank">PMA Membership Terms</a>.
+  </label>
+</div>
+    <button class="btn-primary" id="confirmPMAAccess">Enter Private Barter Space</button>
+    <button class="btn-secondary close-modal" type="button">Cancel</button>
+  </div>
+</div>
+
+<script>
+// Auto-hide PMA banner on scroll down
+const pmaBanner = document.querySelector('.pma-banner');
+let lastPmaScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY;
+
+  if (!pmaBanner) return;
+
+  if (currentScroll > lastPmaScroll && currentScroll > 100) {
+    pmaBanner.classList.add('hide'); // hide banner
+  } else {
+    pmaBanner.classList.remove('hide'); // show banner
+  }
+
+  lastPmaScroll = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Toggle mobile menu
+      const menuToggle = document.querySelector('.menu-toggle');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          this.classList.toggle('active');
+          const navLinks = document.querySelector('.nav-links');
+          if (navLinks) navLinks.classList.toggle('active');
+        });
+      }
+
+// Show/hide header on scroll and update navigation highlighting
+let lastScroll = 0;
+const header = document.querySelector('.header');
+
+function updateActiveNav() {
+  if (!header) return;
+
+  const currentScroll = window.scrollY;
+  const isDesktop = window.innerWidth > 768;
+
+if (isDesktop && currentScroll > lastScroll && currentScroll > 50) {
+  header.classList.add('hidden');
+} else {
+  header.classList.remove('hidden');
+}
+  lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+
+const floatingFooter = document.getElementById('floatingFooter');
+const productCarousel = document.querySelector('.product-carousel');
+
+if (floatingFooter && productCarousel) {
+  const carouselTop = productCarousel.getBoundingClientRect().top + window.scrollY;
+  
+  // Show when the product carousel is about to enter the viewport
+  if (window.scrollY + window.innerHeight > carouselTop + 50) {
+    floatingFooter.classList.add('show');
+  } else {
+    floatingFooter.classList.remove('show');
+  }
+}
+
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('section');
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionBottom = sectionTop + section.offsetHeight;
+    const id = section.getAttribute('id');
+
+    if (currentScroll >= sectionTop && currentScroll < sectionBottom && id) {
+      navLinks.forEach(link => {
+        const linkTarget = link.getAttribute('href');
+        const linkHash = (linkTarget && linkTarget.startsWith('#')) ? linkTarget.substring(1) : null;
+
+        const isActive = linkHash === id;
+        link.style.color = isActive ? '#e82f80' : '#006dd6';
+
+        // Only update hash if it's valid and different
+        if (isActive && id && window.location.hash !== `#${id}`) {
+          history.replaceState(null, null, `#${id}`);
+        }
+      });
+    }
+  });
+
+  // Top of page — reset styles and remove hash
+  if (currentScroll === 0) {
+    navLinks.forEach(link => {
+      link.style.color = link.getAttribute('href') === 'index.html' ? '#e82f80' : '#006dd6';
+    });
+
+    // Cleanly remove the hash from the URL without reloading
+    if (window.location.hash && window.location.hash !== '#') {
+      history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
+  }
+}
+
+window.addEventListener('scroll', updateActiveNav);
+window.addEventListener('load', updateActiveNav);
+
+// === PMA + Signup Modal Logic (Final, Clean) ===
+
+const signupModal = document.querySelector('.signup-modal');
+const pmaAccessModal = document.getElementById('pmaAccessModal');
+const closeSignupModal = signupModal?.querySelector('.close-modal');
+const closePMAAccessModal = pmaAccessModal?.querySelector('.close-modal');
+const confirmPMAAccess = document.getElementById('confirmPMAAccess');
+const signupForm = document.getElementById('signup-form');
+
+function openSignupModal() {
+  if (signupModal) {
+    try {
+      signupModal.showModal();
+    } catch (err) {
+      // Fallback for browsers that don't fully support <dialog>
+      signupModal.setAttribute('open', 'true');
+      signupModal.style.display = 'block';
+    }
+    document.body.classList.add('modal-open');
+  }
+}
+
+
+function closeAllModals() {
+  if (pmaAccessModal) pmaAccessModal.style.display = 'none';
+  if (signupModal?.close) signupModal.close();
+  document.body.classList.remove('modal-open');
+}
+
+// Attach handler to all signup-related buttons
+document.querySelectorAll('.signup-btn, #footerJoinButton').forEach(button => {
+  button.addEventListener('click', () => {
+    const isMember = localStorage.getItem('teavyPmaMember') === 'true';
+    if (!isMember) {
+      pmaAccessModal.style.display = 'block';
+    } else {
+      openSignupModal();
+    }
+  });
+});
+
+// Confirm PMA Agreement
+confirmPMAAccess?.addEventListener('click', () => {
+  const agreed = document.getElementById('agreePMA')?.checked;
+  if (!agreed) {
+    alert('Please agree to the PMA Membership Terms to proceed.');
+    return;
+  }
+
+  localStorage.setItem('teavyPmaMember', 'true');
+
+  // If signupModal is a <dialog>, close pmaAccess first, then open with delay
+  pmaAccessModal.style.display = 'none';
+
+  setTimeout(() => {
+    try {
+      signupModal?.showModal();
+    } catch (err) {
+      signupModal?.setAttribute('open', 'true');
+      signupModal.style.display = 'block';
+    }
+    document.body.classList.add('modal-open');
+  }, 100); // Delay ensures browser finishes rendering/display toggles
+});
+
+
+// Close PMA Modal
+closePMAAccessModal?.addEventListener('click', () => {
+  pmaAccessModal.style.display = 'none';
+});
+
+// Close Signup Modal
+closeSignupModal?.addEventListener('click', () => {
+  if (signupModal) {
+    if (typeof signupModal.close === 'function') {
+      signupModal.close();
+    } else {
+      signupModal.removeAttribute('open');
+      signupModal.style.display = 'none';
+    }
+    document.body.classList.remove('modal-open');
+  }
+});
+
+// Prevent focus freeze
+if (signupModal) {
+  signupModal.addEventListener('cancel', e => {
+    e.preventDefault();
+    signupModal.close();
+    document.body.classList.remove('modal-open');
+  });
+
+  signupModal.addEventListener('close', () => {
+    document.body.classList.remove('modal-open');
+  });
+}
+
+// Signup form
+signupForm?.addEventListener('submit', e => {
+  e.preventDefault();
+
+  const termsCheckbox = signupForm.querySelector('input[name="terms"]');
+  if (!termsCheckbox?.checked) {
+    alert('Please agree to the Terms and Conditions to proceed.');
+    return;
+  }
+
+  const username = e.target.username.value;
+  const email = e.target.email.value;
+  alert(`Registration successful for ${username}! (This is a demo. Email: ${email})`);
+
+  signupModal?.close();
+  document.body.classList.remove('modal-open');
+  signupForm.reset();
+});
+
+      // Event Calendar Functionality with Google Calendar Sync
+      let currentDate = new Date(2025, 4, 1);
+
+      async function fetchGoogleCalendarEvents() {
+        const apiKey = 'YOUR_API_KEY';
+        const calendarId = 'YOUR_CALENDAR_ID';
+        const timeMin = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).toISOString();
+        const timeMax = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).toISOString();
+
+        try {
+          const response = await fetch(
+            `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${timeMin}&timeMax=${timeMax}&singleEvents=true&orderBy=startTime`
+          );
+          const data = await response.json();
+          return data.items || [];
+        } catch (error) {
+          console.error('Error fetching Google Calendar events:', error);
+          return [];
+        }
+      }
+
+      function renderCalendar() {
+        const monthYear = document.getElementById('month-year');
+        const calendarGrid = document.querySelector('.calendar-grid');
+        const eventList = document.getElementById('event-list');
+        const eventsHeading = document.getElementById('events-heading');
+
+        if (!monthYear || !calendarGrid || !eventList || !eventsHeading) return;
+
+        const dayHeaders = calendarGrid.querySelectorAll('.calendar-day-header');
+        calendarGrid.innerHTML = '';
+        dayHeaders.forEach(header => calendarGrid.appendChild(header));
+
+        monthYear.textContent = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+        eventsHeading.textContent = `Events in ${currentDate.toLocaleString('default', { month: 'long', year: 'numeric' })}`;
+
+        const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+        const totalDays = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+
+        for (let i = 0; i < firstDay; i++) {
+          const emptyDay = document.createElement('div');
+          emptyDay.className = 'calendar-day empty';
+          calendarGrid.appendChild(emptyDay);
+        }
+
+        for (let day = 1; day <= totalDays; day++) {
+          const dayDiv = document.createElement('div');
+          dayDiv.className = 'calendar-day';
+          dayDiv.textContent = day;
+          calendarGrid.appendChild(dayDiv);
+        }
+
+        fetchGoogleCalendarEvents().then(events => {
+          eventList.innerHTML = '';
+          if (events.length === 0) {
+            const noEvent = document.createElement('li');
+            noEvent.textContent = 'No events this month.';
+            eventList.appendChild(noEvent);
+          } else {
+            events.forEach(event => {
+              const start = new Date(event.start.dateTime || event.start.date);
+              if (start.getMonth() === currentDate.getMonth()) {
+                const eventItem = document.createElement('li');
+                eventItem.innerHTML = `<strong>${start.getDate()} ${currentDate.toLocaleString('default', { month: 'long' })}:</strong> ${event.summary} - ${event.description || 'No description'}`;
+                eventList.appendChild(eventItem);
+
+                const eventDay = calendarGrid.querySelector(`.calendar-day:nth-child(${firstDay + start.getDate() + 1})`);
+                if (eventDay) eventDay.classList.add('event-day');
+              }
+            });
+          }
+        });
+      }
+
+      renderCalendar();
+
+      const prevMonth = document.getElementById('prev-month');
+      const nextMonth = document.getElementById('next-month');
+
+      if (prevMonth) {
+        prevMonth.addEventListener('click', () => {
+          currentDate.setMonth(currentDate.getMonth() - 1);
+          renderCalendar();
+        });
+      }
+
+      if (nextMonth) {
+        nextMonth.addEventListener('click', () => {
+          currentDate.setMonth(currentDate.getMonth() + 1);
+          renderCalendar();
+        });
+      }
+
+      // Filter Functionality (Desktop and Mobile)
+      const filterSelect = document.querySelector('.filter-select');
+      const filterSelectMobile = document.querySelector('.filter-select-mobile');
+      const subfilterOptions = document.querySelector('.subfilter-options');
+      const subfilterSelectMobile = document.querySelector('.subfilter-select-mobile');
+      const productPreviews = document.querySelectorAll('.product-preview');
+      const locationCheckboxes = document.querySelectorAll('.subfilter-options input[name="location"]');
+
+      if (filterSelect) {
+        filterSelect.addEventListener('change', () => {
+          const selectedCategory = filterSelect.value;
+          if (subfilterOptions) {
+            subfilterOptions.style.display = selectedCategory === 'services' ? 'block' : 'none';
+          }
+
+          productPreviews.forEach(preview => {
+            const category = preview.getAttribute('data-category');
+            if (selectedCategory === 'all' || selectedCategory === category) {
+              preview.style.display = 'block';
+            } else {
+              preview.style.display = 'none';
+            }
+          });
+
+          if (selectedCategory !== 'services') {
+            locationCheckboxes.forEach(checkbox => {
+              checkbox.checked = false;
+            });
+          }
+        });
+      }
+
+      locationCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+          const selectedLocations = Array.from(locationCheckboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.value);
+
+          productPreviews.forEach(preview => {
+            if (preview.getAttribute('data-category') === 'services') {
+              const location = preview.getAttribute('data-location') || 'online';
+              if (selectedLocations.length === 0 || selectedLocations.includes(location)) {
+                preview.style.display = preview.style.display === 'none' ? 'block' : 'block';
+              } else {
+                preview.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+
+      if (filterSelectMobile) {
+        filterSelectMobile.addEventListener('change', () => {
+          const selectedCategory = filterSelectMobile.value;
+          if (subfilterSelectMobile) {
+            subfilterSelectMobile.style.display = selectedCategory === 'services' ? 'inline-block' : 'none';
+          }
+
+          productPreviews.forEach(preview => {
+            const category = preview.getAttribute('data-category');
+            if (selectedCategory === 'all' || selectedCategory === category) {
+              preview.style.display = 'block';
+            } else {
+              preview.style.display = 'none';
+            }
+          });
+
+          if (selectedCategory !== 'services' && subfilterSelectMobile) {
+            subfilterSelectMobile.value = '';
+          }
+        });
+      }
+
+      if (subfilterSelectMobile) {
+        subfilterSelectMobile.addEventListener('change', () => {
+          const selectedLocation = subfilterSelectMobile.value;
+          productPreviews.forEach(preview => {
+            if (preview.getAttribute('data-category') === 'services') {
+              const location = preview.getAttribute('data-location') || 'online';
+              if (selectedLocation === '' || selectedLocation === location) {
+                preview.style.display = preview.style.display === 'none' ? 'block' : 'block';
+              } else {
+                preview.style.display = 'none';
+              }
+            }
+          });
+        });
+      }
+
+      const filterSidebar = document.querySelector('.filter-sidebar');
+      const filterToggle = document.querySelector('.filter-toggle');
+
+      if (filterToggle) {
+        filterToggle.addEventListener('click', () => {
+          if (filterSidebar) {
+            filterSidebar.classList.toggle('active');
+            console.log('Filter sidebar toggled, active:', filterSidebar.classList.contains('active'));
+          }
+        });
+      }
+
+      function updateFilterLayout() {
+        const mobileFilterContainer = document.querySelector('.mobile-filter-container');
+        if (!mobileFilterContainer || !filterSidebar || !subfilterOptions) return;
+
+        if (window.innerWidth <= 768) {
+          filterSidebar.style.display = 'none';
+          mobileFilterContainer.style.display = 'flex';
+          const subfilterSelectMobile = document.querySelector('.subfilter-select-mobile');
+          if (subfilterSelectMobile && filterSelectMobile) {
+            subfilterSelectMobile.style.display = filterSelectMobile.value === 'services' ? 'inline-block' : 'none';
+          }
+        } else {
+          filterSidebar.style.display = 'block';
+          mobileFilterContainer.style.display = 'none';
+          if (filterSelect) {
+            subfilterOptions.style.display = filterSelect.value === 'services' ? 'block' : 'none';
+          }
+        }
+      }
+
+      window.addEventListener('resize', updateFilterLayout);
+      updateFilterLayout();
+
+      if (filterSelect && filterSelect.value === 'services' && subfilterOptions) {
+        subfilterOptions.style.display = 'block';
+      }
+      if (filterSelectMobile && filterSelectMobile.value === 'services' && subfilterSelectMobile) {
+        subfilterSelectMobile.style.display = 'inline-block';
+      }
+
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.addEventListener('keydown', e => {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) e.preventDefault();
+      });
+    });
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93dd8aa2b9f5c010',t:'MTc0NjkyMzE1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource.html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93de88f32f62dd1d',t:'MTc0NjkzMzU2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource(1).html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93df5c751c6f7b99',t:'MTc0Njk0MjIzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource(2).html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93dff320dbfe53b4',t:'MTc0Njk0ODQwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource(3).html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e063ea1afc677e',t:'MTc0Njk1MzAyMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource(4).html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e0cdbd7bbdb01c',t:'MTc0Njk1NzM1Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource(5).html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e4ba522979be15',t:'MTc0Njk5ODUwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource(6).html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e60444dbe6ed7f',t:'MTc0NzAxMjAyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" src="./index_bakup_files/saved_resource(7).html" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" width="1"></iframe>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-pagination .dot');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((s, i) => {
+      s.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    current = index;
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const index = parseInt(dot.getAttribute('data-slide'), 10);
+      showSlide(index);
+    });
+  });
+
+  setInterval(() => {
+    let next = (current + 1) % slides.length;
+    showSlide(next);
+  }, 7000);
+});
+
+document.getElementById('connectWalletBtn')?.addEventListener('click', () => {
+  alert('Wallet connected! (Placeholder)');
+  // Future: Trigger Web3Modal or OAuth2 wallet login
+});
+
+</script>
+
+</body>
+</html>
