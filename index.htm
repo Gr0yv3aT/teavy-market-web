@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TEAVY™ Market | Community Barter &amp; Wellness</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="logo.webp" rel="icon" type="image/webp"/>
+<meta content="TEAVY™ Market – A peer-to-peer wellness and barter marketplace rooted in vitality, spiritual commerce, and holistic abundance." name="description"/>
+<meta content="TEAVY™, wellness marketplace, barter, holistic tea, soundbath, community events, yoga, eco-laundry, PMA" name="keywords"/>
+<meta content="#8e24aa" name="theme-color"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+</meta></head>
+<body>
+<div class="pma-banner">
+  <span class="banner-text">
+    <i class="fa-solid fa-circle-info"></i> <span class="inner-banner-text"><strong>Notice:</strong> By using this platform, you agree to participate in private contract and
+    <span style="display: inline-block;">spiritual exchange under our <a href="/membership-terms.html" target="_blank">PMA terms</a>.</span></span>
+  </span>
+</div>
+<header class="header">
+<div class="header-container">
+<img alt="TEAVY™ Logo" class="logo" src="logo.png"/>
+<button class="menu-toggle">☰</button>
+<nav class="nav-links">
+<a href="index.html"><i class="fa-solid fa-spa"></i> Home</a>
+<a href="#market"><i class="fa-solid fa-store"></i> Marketplace</a>
+<a href="#events"><i class="fa-solid fa-calendar-days"></i> Events</a>
+<a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+<a href="https://teavy.org" target="_blank"><i class="fa-solid fa-circle-info"></i> TEAVY.org</a>
+<button class="wallet-btn" id="connectWalletBtn"><i class="fa-solid fa-user-lock"></i> Connect Wallet</button>
+</nav>
+</div>
+</header>
+<main class="content">
+<section class="hero">
+<div class="hero-carousel-container">
+<div class="hero-carousel hero-carousel-left">
+<div class="hero-carousel-track">
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-1.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-2.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-3.webp"/></div>
+<!-- Duplicates for infinite loop -->
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-4.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-5.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\left-hero-carousel-6.webp"/></div>
+</div>
+</div>
+<div class="hero-text-slider"><div class="hero-slide active">
+<h1><i class="fa-solid fa-spa" style="background-color: #fff; border-radius: 30px; padding: 10px;"></i><br/><br/>Welcome to the <span style="display: inline-block;"><span>TEAVY</span><span style="font-weight:600;">™</span> Marketplace</span></h1>
+<p>An autonomous peer-to-peer wellness <span style="display: inline-block;">and barter marketplace.</span><br/>Rooted in vitality, spiritual commerce, <span style="display: inline-block;">and energetic harmony.</span></p>
+<a class="btn-primary" href="#market">Explore Marketplace</a>
+</div><div class="hero-slide">
+<h1><i class="fa-solid fa-leaf" style="background-color: #fff; border-radius: 30px; padding: 10px;"></i><br/><br/>What is TEAVY™ Market?</h1>
+<p><span style="display: inline-block">TEAVY™ is a</span> <span style="display: inline-block">sacred commerce platform</span> <span style="display: inline-block">where healing, wellness, <span style="display: inline-block">and community exchange flow.</span><br/>Join us to trade tea, services, <span style="display: inline-block">and more in a spiritually aligned space.</span></p>
+<a class="btn-primary" href="#market">Explore Marketplace</a>
+</div><div class="hero-pagination">
+<span class="dot active" data-slide="0"></span>
+<span class="dot" data-slide="1"></span>
+</div></div>
+<div class="hero-carousel hero-carousel-right">
+<div class="hero-carousel-track">
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-1.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-2.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-3.webp"/></div>
+<!-- Duplicates for infinite loop -->
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-4.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-5.webp"/></div>
+<div class="hero-carousel-item"><img class="hero-carousel-item" src="assets\images\right-hero-carousel-6.webp"/></div>
+</div>
+</div>
+</div>
+</section>
+<section class="service-section" id="market">
+<h2><i class="fa-solid fa-store"></i> Community Marketplace (Barterspace)</h2><p>(Featured Products &amp; Services)</p>
+<div class="mobile-filter-container">
+<select class="filter-select-mobile" name="category">
+<option value="all">All</option>
+<option value="tea">Tea</option>
+<option value="services">Services</option>
+<option disabled="" value="eco-laundry"><!-- --></option>
+</select>
+<select class="subfilter-select-mobile" name="location" style="display: none;">
+<option value="">Location</option>
+<option value="online">Online</option>
+<option value="local">Local</option>
+<option value="nationwide">Nationwide</option>
+</select>
+</div>
+<div class="marketplace-container">
+<aside class="filter-sidebar">
+<h3>Filter by Type</h3>
+<button class="filter-toggle">☰ Filter</button>
+<div class="filter-options">
+<select class="filter-select" name="category">
+<option selected="" value="all">All</option>
+<option value="tea">Tea</option>
+<option value="services">Services</option>
+<option disabled="" value="eco-laundry"></option>
+</select>
+</div>
+<div class="subfilter-options" data-subfilter="location">
+<h4>Location</h4>
+<label><input checked="" name="location" type="checkbox" value="online"/> Online</label>
+<label><input name="location" type="checkbox" value="local"/> Local</label>
+<label><input name="location" type="checkbox" value="nationwide"/> Nationwide</label>
+</div>
+</aside>
+<div class="product-carousel">
+<div class="carousel-track">
+<!-- Original Products -->
+<div class="product-preview" data-category="tea" data-item-number="1">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Blue Lotus + Rose Tea"><img class="preview-img" src="assets\images\products\oolong-harmony.webp"/></div>
+<p class="product-name">TEAVY™ Blue Lotus + Rose Tea</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Blue Lotus, Rose Petals</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Farm</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="2">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Green Tea Elixir"><img class="preview-img" src="assets\images\products\green-tea-elixir.webp"/></div>
+<p class="product-name">TEAVY™ Green Tea Elixir</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Green Tea, Jasmine</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Sustainable Fields</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="3">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Herbal Chamomile Blend"><img class="preview-img" src="assets\images\products\herbal-chamomile.webp"/></div>
+<p class="product-name">TEAVY™ Herbal Chamomile Blend</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Chamomile, Lavender</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Eco-Friendly Gardens</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.8 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Moroccan Mint"><img class="preview-img" src="assets\images\products\moroccan-mint.webp"/></div>
+<p class="product-name">TEAVY™ Moroccan Mint</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Moroccan Mint Leaves</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Highlands</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Oolong Harmony"><img class="preview-img" src="assets\images\products\oolong-harmony.webp"/></div>
+<p class="product-name">TEAVY™ Oolong Harmony</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Oolong Tea</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Mountain Estates</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="6">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Hibiscus Glow"><img class="preview-img" src="assets\images\products\oolong-harmony.webp"/></div>
+<p class="product-name">TEAVY™ Hibiscus Glow</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Hibiscus Flowers</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Tropical Farms</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.7 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Service Exchange Listings -->
+<div class="product-preview" data-category="services" data-item-number="7" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Reiki Attunement Sessions">Service Icon</div>
+<p class="product-name">Advanced Reiki Attunement</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-2 transformative Reiki attunement sessions to elevate your energy alignment.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour acupuncture/cupping session by a master Chinese acupuncturist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>3 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="8" data-location="local">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Yoga Instruction">Service Icon</div>
+<p class="product-name">Personalized Yoga Guidance</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>2 private yoga sessions tailored to your wellness journey.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour sound healing session with certified practitioner.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="9" data-location="nationwide">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Holistic Coaching">Service Icon</div>
+<p class="product-name">Holistic Life Coaching</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour session to unlock your potential with expert guidance.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour massage therapy by a licensed therapist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="10" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Sound Healing Therapy">Service Icon</div>
+<p class="product-name">Sacred Sound Healing</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour immersive soundbath to restore harmony.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour nutritional consultation with a holistic expert.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.2 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Duplicated Products for Seamless Loop -->
+<div class="product-preview" data-category="tea" data-item-number="1">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Blue Lotus + Rose Tea"><img class="preview-img" src="assets\images\products\oolong-harmony.webp"/></div>
+<p class="product-name">TEAVY™ Blue Lotus + Rose Tea</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Blue Lotus, Rose Petals</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Farm</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="2">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Green Tea Elixir"><img class="preview-img" src="assets\images\products\green-tea-elixir.webp"/></div>
+<p class="product-name">TEAVY™ Green Tea Elixir</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Green Tea, Jasmine</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Sustainable Fields</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="3">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Herbal Chamomile Blend"><img class="preview-img" src="assets\images\products\herbal-chamomile.webp"/></div>
+<p class="product-name">TEAVY™ Herbal Chamomile Blend</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Chamomile, Lavender</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Eco-Friendly Gardens</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.8 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Moroccan Mint"><img class="preview-img" src="assets\images\products\moroccan-mint.webp"/></div>
+<p class="product-name">TEAVY™ Moroccan Mint</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Moroccan Mint Leaves</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Organic Highlands</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="4">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Oolong Harmony"><img class="preview-img" src="assets\images\products\oolong-harmony.webp"/></div>
+<p class="product-name">TEAVY™ Oolong Harmony</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Oolong Tea</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Mountain Estates</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="tea" data-item-number="6">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-leaf-fill"></i> Tea</div>
+<div class="preview-img" data-full-name="TEAVY™ Hibiscus Glow"><img class="preview-img" src="assets\images\products\oolong-harmony.webp"/></div>
+<p class="product-name">TEAVY™ Hibiscus Glow</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Ingredients:</span><span>Hibiscus Flowers</span></div>
+<div class="detail-row"><span class="bold-label">Origin:</span><span>Tropical Farms</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>1.7 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Service Exchange Listings -->
+<div class="product-preview" data-category="services" data-item-number="7" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Reiki Attunement Sessions">Service Icon</div>
+<p class="product-name">Advanced Reiki Attunement</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-2 transformative Reiki attunement sessions to elevate your energy alignment.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour acupuncture/cupping session by a master Chinese acupuncturist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>3 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="8" data-location="local">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Yoga Instruction">Service Icon</div>
+<p class="product-name">Personalized Yoga Guidance</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>2 private yoga sessions tailored to your wellness journey.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour sound healing session with certified practitioner.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.5 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="9" data-location="nationwide">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Holistic Coaching">Service Icon</div>
+<p class="product-name">Holistic Life Coaching</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour session to unlock your potential with expert guidance.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour massage therapy by a licensed therapist.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2 Credits</span></div>
+</div>
+</div>
+</div>
+<div class="product-preview" data-category="services" data-item-number="10" data-location="online">
+<div class="product-preview-inner">
+<div class="category-ribbon"><i class="bi bi-signpost-2-fill"></i> Service</div>
+<div class="preview-img" data-full-name="Sound Healing Therapy">Service Icon</div>
+<p class="product-name">Sacred Sound Healing</p>
+<div class="product-details">
+<div class="detail-row"><span class="bold-label">Offer:</span><span>1-hour immersive soundbath to restore harmony.</span></div>
+<div class="detail-row"><span class="bold-label">Exchange:</span><span>1-hour nutritional consultation with a holistic expert.</span></div>
+<div class="detail-row"><span class="bold-label">Barter Value:</span><span>2.2 Credits</span></div>
+</div>
+</div>
+</div>
+<!-- Fixed, Centered Buttons -->
+<!-- Sign Up Modal -->
+<dialog class="modal signup-modal">
+<div class="modal-content">
+<h3><i class="bi bi-person-circle" style="font-size: 2rem;"></i><br/>Apply for TEAVY™ Market Membership</h3>
+<form id="signup-form">
+<input name="username" placeholder="Choose a Username" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<input name="password" placeholder="Create a Password" required="" type="password"/>
+<div class="terms-container">
+<input name="terms" required="" style="display: inline; width: 1rem;" type="checkbox"/>
+<label>I agree to the <a href="/terms.html" target="_blank">Terms and Conditions</a></label>
+</div>
+<button class="btn-primary" type="submit">Submit</button>
+<button class="btn-secondary close-modal" type="button">Cancel</button>
+</form>
+</div>
+</dialog>
+<!-- Begin Learn More Modal -->
+<!-- Learn More Modal (div-based for compatibility) -->
+<div class="modal learn-more-modal" style="display: none;">
+<div class="modal-content">
+<h3>About TEAVY™ Market</h3>
+<p class="learn-more">
+      TEAVY™ Market is a peer-to-peer wellness and barter marketplace designed to foster vitality, spiritual commerce, and holistic abundance. Trade teas, services, and more using our credit system. To get started, sign up, explore listings, and connect with others via wallet integration. Learn more at
+      <a href="https://teavy.org" target="_blank">teavy.org</a>.
+    </p>
+<button class="btn-secondary close-modal" type="button">Close</button>
+</div>
+</div>
+<!-- End Learn More Modal -->
+</div></div></div>
+</section>
+<section class="service-section" id="events">
+<h2><i class="fa-solid fa-calendar-days"></i> Upcoming Tea &amp; Soundbath Ceremonies</h2>
+<p>Curated community events — yoga, live music, potlucks, and more.</p>
+<div class="event-calendar">
+<div class="calendar-header">
+<button class="btn-secondary" id="prev-month">◄</button>
+<h3 id="month-year">May 2025</h3>
+<button class="btn-secondary" id="next-month">►</button>
+</div>
+<div class="calendar-grid">
+<div class="calendar-day-header">Sun</div>
+<div class="calendar-day-header">Mon</div>
+<div class="calendar-day-header">Tue</div>
+<div class="calendar-day-header">Wed</div>
+<div class="calendar-day-header">Thu</div>
+<div class="calendar-day-header">Fri</div>
+<div class="calendar-day-header">Sat</div>
+<!-- Calendar days will be populated by JavaScript -->
+</div>
+<div class="event-list">
+<h4 id="events-heading">Events in May 2025</h4>
+<ul id="event-list">
+<!-- Events will be populated by JavaScript -->
+</ul>
+</div>
+</div>
+</section>
+<section class="service-section">
+<h2><i class="fa-solid fa-soap"></i> Soltare Eco-Laundry (Coming Soon)</h2>
+<p>Solar-powered modernized laundry facility supporting eco-living.</p>
+</section>
+<section class="contact-section" id="contact">
+<h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+<form action="mailto:info@teavy.market" enctype="text/plain" method="POST">
+<input name="name" placeholder="Your Name" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<textarea name="message" placeholder="Your Message" required=""></textarea>
+<!-- Honeypot Field (Hidden) -->
+<div class="honeypot-field">
+<input name="honeypot" placeholder="Leave this blank" type="text" value=""/>
+</div>
+<button class="btn-primary" id="send-message" type="submit">Send Message</button>
+</form>
+</section>
+</main>
+<footer class="footer">
+<div class="donate"><a class="btn-secondary" id="donate-button" href="#donate"><i class="bi bi-suit-heart-fill"></i> Donate</a></div>
+<p>© 2025 TEAVY™ and its affiliates. All rights reserved.</p>
+<p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Disclaimer</a></p>
+<div class="social-media">
+<a aria-label="Instagram" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+<a aria-label="Twitter" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+</footer>
+<div class="floating-footer-bar" id="floatingFooter">
+  <div class="footer-bar-inner">
+    <div class="footer-btn-wrap">
+     <button id="footerJoinButton" class="btn-primary signup-btn">
+  <i class="bi bi-person-fill"></i> Join to Barter
+</button>
+    </div>
+  </div>
+</div>
+
+<!-- PMA Access Modal -->
+<div class="modal pma-access-modal" id="pmaAccessModal">
+  <div class="modal-content">
+    <h3><i class="bi bi-person-check-fill" style="font-size: 2rem;"></i><br/>Private Membership Access Required</h3>
+    <p>Bartering is reserved for TEAVY™ PMA members only.<br/>To continue, please confirm your agreement:</p>
+    <div class="terms-container" style="text-align: left;">
+  <input type="checkbox" id="agreePMA" required style="margin-right: 0.5rem; display: inline-block; width: 1rem; vertical-align: middle;" />
+  <label for="agreePMA" style="display: inline-block; font-size: 0.84rem; vertical-align: middle;">
+    I agree to the <a href="/membership-terms.html" target="_blank">PMA Membership Terms</a>.
+  </label>
+</div>
+    <button class="btn-primary" id="confirmPMAAccess">Enter Private Barter Space</button>
+    <button class="btn-secondary close-modal" type="button">Cancel</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
