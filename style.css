@@ -74,7 +74,7 @@ body {
   text-decoration: none;
   color: #006dd6;
   font-weight: 800;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   transition: transform 0.3s ease;
   font-size: 1.1rem;
   display: inline-grid;
@@ -743,23 +743,23 @@ body.modal-open {
 
 .hero {
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 0 1rem 2rem;
 }
 
 .hero h1 {
-  font-size: 1.74rem;
+  font-size: 1.5rem;
   color: #159d02;
   font-weight: 800;
   padding: 0 1rem 0 1rem
 }
 
 .hero p {
-  font-size: 2.75vh;
+  font-size: 1rem;
   color: #159d02;
   margin-top: 1rem;
   font-weight: 600;
   padding: 0 1rem 1rem 1rem;
-  min-height: 13vh;
+  min-height: 7vh;
 }
 
 .btn-primary, .btn-secondary {
@@ -1241,7 +1241,7 @@ dialog.modal.learn-more-modal {
 }
 
 .banner-text {
-  padding: 0rem 2rem;
+  padding: 0rem 0.7rem;
   width: fit-content;
   display: inline-block;
 }
