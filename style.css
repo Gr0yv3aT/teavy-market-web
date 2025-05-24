@@ -776,7 +776,7 @@ body.modal-open {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(142, 36, 170, 0.4);
+  box-shadow: 0 2px 5px rgba(142, 36, 170, 0.4);
   font-weight: 800;
   border: none;
   transition: transform 0.3s ease;
