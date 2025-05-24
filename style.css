@@ -955,7 +955,7 @@ p.learn-more {
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 1vw;
+  gap: 0.5vw;
   text-align: center;
 }
 
@@ -968,7 +968,7 @@ p.learn-more {
 }
 
 .calendar-day {
-  padding: 0.5rem;
+  padding: 0.1rem;
   background: #006dd6;
   border-radius: 5px;
   min-height: 50px;
@@ -1047,7 +1047,7 @@ p.learn-more {
     font-size: 0.99rem;
   }
   .calendar-header h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .event-list li {
     font-size: 0.8rem;
