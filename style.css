@@ -582,7 +582,7 @@ select.filter-select-mobile {
 
 @media (max-width: 480px) {
   .product-preview {
-    max-width: 14rem;
+    max-width: 13rem;
   }
   .preview-img {
     height: 6rem;
@@ -1081,7 +1081,7 @@ p.learn-more {
   flex: 0 0 auto;
   scroll-snap-align: start;
   min-width: 16rem;
-  max-width: 18rem;
+  max-width: 20rem;
 }
 
 /* === Recovered Modal and Popup Z-Index === */
