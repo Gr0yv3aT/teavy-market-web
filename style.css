@@ -1017,7 +1017,7 @@ p.learn-more {
 @media (max-width: 768px) {
   .calendar-grid {
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.3rem;
+    gap: 1vw;
   }
   .calendar-day {
     padding: 0.3rem;
@@ -1035,7 +1035,7 @@ p.learn-more {
 
 @media (max-width: 480px) {
   .calendar-grid {
-    gap: 0.2vw;
+    gap: 1vw;
   }
   .calendar-day {
     padding: 0.2rem;
