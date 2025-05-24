@@ -813,7 +813,7 @@ body.modal-open {
   text-align: center;
   font-weight: 600;
   background-color: #ffffff;
-  border: 1.5rem solid #f4f9f8;
+  /* border: 1.5rem solid #f4f9f8; */
   width: 100%;
   box-sizing: border-box;
 }
@@ -856,7 +856,7 @@ p.learn-more {
 @media (max-width: 480px) {
   .service-section {
     padding: 1rem !important;
-    border: 0.5rem solid #f4f9f8 !important;
+   /* border: 0.5rem solid #f4f9f8 !important; */
   }
 }
 
@@ -952,6 +952,11 @@ p.learn-more {
   font-size: 1rem;
 }
 
+#prev-month, #next-month {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1039,7 +1044,7 @@ p.learn-more {
 
 @media (max-width: 480px) {
   .calendar-grid {
-    gap: 0.2vw;
+    gap: 0.22vw;
   }
   .calendar-day {
     padding: 0.19rem;
