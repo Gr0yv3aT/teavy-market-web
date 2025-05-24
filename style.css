@@ -152,6 +152,7 @@ body {
     background: #f7f7f7;
     border-radius: 10px;
 	max-width: 350px;
+	display: initial;
   }
   .nav-links .wallet-btn {
     display: none; /* Remove from hamburger menu */
