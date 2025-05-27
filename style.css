@@ -927,12 +927,20 @@ p.learn-more {
 
 /* Event Calendar Styles */
 .event-calendar {
-  max-width: 600px;
+  max-width: 470px;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scroll */
   margin: 2rem auto;
   background: #ffffff;
   border-radius: 10px;
  /* padding: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+#events {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .calendar-header {

@@ -470,6 +470,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let next = (current + 1) % slides.length;
     showSlide(next);
   }, 7000);
+  
+  // Add this inside main.js after the DOM loads
+const track = document.querySelector('.carousel-track');
+let startX = 0;
+
+if (track) {
+  track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  track.addEventListener('touchmove', (e) => {
+    if (!startX) return;
+    const moveX = e.touches[0].clientX;
+    const diff = startX - moveX;
+    track.scrollLeft += diff;
+    startX = e.touches[0].clientX;
+  });
+}
 });
 
 document.getElementById('connectWalletBtn')?.addEventListener('click', () => {
