@@ -494,3 +494,32 @@ document.getElementById('connectWalletBtn')?.addEventListener('click', () => {
   alert('Wallet connected! (Placeholder)');
   // Future: Trigger Web3Modal or OAuth2 wallet login
 });
+
+
+// Enable horizontal swipe on product carousel
+(function() {
+  const carouselTrack = document.querySelector('.carousel-track');
+  if (!carouselTrack) return;
+
+  let startX = 0;
+  let scrollLeft = 0;
+  let isDown = false;
+
+  carouselTrack.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - carouselTrack.offsetLeft;
+    scrollLeft = carouselTrack.scrollLeft;
+  });
+
+  carouselTrack.addEventListener('touchend', () => {
+    isDown = false;
+  });
+
+  carouselTrack.addEventListener('touchmove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - carouselTrack.offsetLeft;
+    const walk = (x - startX) * 2; // sensitivity
+    carouselTrack.scrollLeft = scrollLeft - walk;
+  });
+})();

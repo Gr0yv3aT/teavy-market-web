@@ -1281,3 +1281,11 @@ dialog.modal.learn-more-modal {
 .signup-modal {
   display: none;
 }
+
+
+/* Responsive fixes for Firefox calendar layout */
+.responsive-events {
+  overflow-x: auto;
+  max-width: 100vw;
+  padding: 0 1rem;
+}
