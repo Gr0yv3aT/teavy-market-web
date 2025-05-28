@@ -927,7 +927,7 @@ p.learn-more {
 
 /* Event Calendar Styles */
 .event-calendar {
-  max-width: 500px;
+  max-width: 470px;
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* smooth scroll */
