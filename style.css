@@ -986,7 +986,7 @@ p.learn-more {
   /* padding: 0.1rem; */
   background: #1dc405;
   border-radius: 5px;
-  min-height: 50px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
