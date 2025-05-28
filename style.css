@@ -983,10 +983,10 @@ p.learn-more {
 }
 
 .calendar-day {
-  /* padding: 0.1rem; */
+  padding: 0.1rem;
   background: #1dc405;
   border-radius: 5px;
-  min-height: 40px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
