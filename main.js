@@ -523,3 +523,80 @@ document.getElementById('connectWalletBtn')?.addEventListener('click', () => {
     carouselTrack.scrollLeft = scrollLeft - walk;
   });
 })();
+
+
+// Add class to body if JS is enabled
+document.body.classList.add('js-enabled');
+
+// Debounce utility function
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), wait);
+  };
+}
+
+// Dark mode toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.querySelector('.theme-toggle');
+  const themeIcon = themeToggle?.querySelector('.theme-icon');
+
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (savedTheme) {
+    document.body.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+  } else if (prefersDark) {
+    document.body.setAttribute('data-theme', 'dark');
+    updateThemeIcon('dark');
+  }
+
+  function updateThemeIcon(theme) {
+    if (themeIcon) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  }
+
+  themeToggle?.addEventListener('click', () => {
+    const current = document.body.getAttribute('data-theme') || 'light';
+    const newTheme = current === 'light' ? 'dark' : 'light';
+    document.body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+  });
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      document.body.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      updateThemeIcon(e.matches ? 'dark' : 'light');
+    }
+  });
+});
+
+// Wallet connection with ethers.js
+document.addEventListener('DOMContentLoaded', () => {
+  const connectWalletBtn = document.getElementById('connectWalletBtn');
+  const liveRegion = document.getElementById('live-region');
+
+  connectWalletBtn?.addEventListener('click', async () => {
+    if (!window.ethereum) {
+      liveRegion.textContent = 'No wallet detected.';
+      alert('Please install MetaMask.');
+      return;
+    }
+
+    try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      await provider.send('eth_requestAccounts', []);
+      const signer = provider.getSigner();
+      const address = await signer.getAddress();
+      liveRegion.textContent = `Wallet connected: ${address}`;
+      alert(`Wallet connected: ${address}`);
+    } catch (error) {
+      console.error('Wallet connection error:', error);
+      liveRegion.textContent = 'Failed to connect wallet.';
+      alert('Wallet connection failed.');
+    }
+  });
+});
